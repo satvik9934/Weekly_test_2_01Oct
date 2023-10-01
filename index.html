@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Event</title>
+    <style>
+      .header{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        height: 600px;
+        justify-content: center;
+        gap: 3rem;
+        font-family: cursive;
+      }
+
+      body {
+        background-color: rgb(3, 3, 133);
+      }
+      .container > div {
+        border: 1px solid white;
+        width: 200px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        align-items: center;
+      }
+
+      .container > p {
+        color: white;
+        font-weight: lighter;
+      }
+
+      .container1 > div{
+        text-align: center;
+        border: 1px solid white;
+        width: 200px;
+        height: 100px;
+        color: white;
+       ;
+      }
+      #div1,#div3{
+        margin-top: 25px;
+        font-size: 30px;
+      }
+
+      .container1 > p {
+        color: white;
+        font-weight: lighter;
+      }
+
+      @media screen and (max-width: 480px) {
+        .header{
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+
+        font-family: cursive;
+        flex-direction: column;
+      }
+    }
+
+      @media screen and (max-width: 210px) {
+        .header{
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+        font-family: cursive;
+        flex-direction: column;
+        flex-shrink:inherit ;
+      }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <p>Mouse X Prosition(px)</p>
+        <div > <p id="div3">20</p></div>
+      </div>
+
+      <div class="container1">
+        <p>Mouse Y Prosition(px)</p>
+        <div > <p id="div1">20</p></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
